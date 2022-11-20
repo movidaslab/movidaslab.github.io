@@ -5,6 +5,13 @@ body{
     font-weight: 700;
 }
 
+h1{
+    color: black !important;
+    font-family: "IBM Plex Mono" !important;
+    font-size: 50px;
+    font-weight: 700;
+}
+
 .navbar{
     border: none;
 }
