@@ -4644,7 +4644,7 @@ fieldset:disabled .btn {
 .navbar {
   --bs-navbar-padding-x: 1rem;
   --bs-navbar-padding-y: 0.5rem;
-  --bs-navbar-color: #344767;
+  --bs-navbar-color: #000000;
   --bs-navbar-hover-color: rgba(52, 71, 103, 0.7);
   --bs-navbar-disabled-color: rgba(52, 71, 103, 0.3);
   --bs-navbar-active-color: rgba(52, 71, 103, 0.9);
@@ -23202,7 +23202,7 @@ hr.horizontal.gray-light {
 }
 
 .navbar .nav-link {
-  color: #344767;
+  color: black;
   padding: 0.5rem 1rem;
   font-weight: 400;
   font-size: 0.875rem;
