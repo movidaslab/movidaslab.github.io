@@ -6,7 +6,9 @@ body{
 }
 
 .navbar .nav-link {
-    color: #191919 !important;
+    font-family: "IBM Plex Mono" !important;
+    font-weight: 700 !important;
+    color: black !important;
     padding: 0.5rem 1rem;
     font-weight: 400;
     font-size: 0.875rem;
