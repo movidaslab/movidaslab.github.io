@@ -5,6 +5,10 @@ body{
     font-weight: 700;
 }
 
+.navbar{
+    border: none;
+}
+
 .navbar .nav-link {
     font-family: "IBM Plex Mono" !important;
     font-weight: 700 !important;
@@ -12,4 +16,14 @@ body{
     padding: 0.5rem 1rem;
     font-weight: 400;
     font-size: 0.875rem;
+}
+
+.text-secondary{
+    color: rgb(42, 41, 41);
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
