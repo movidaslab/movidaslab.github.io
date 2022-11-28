@@ -91,50 +91,81 @@
     </div>
   </div>
    <!-- END NAVBAR -->
-
-       <!-- START HEADER -->
-  <header class="header-2">
-    <div class="page-header min-vh-100" style="background-image: url(./assets/img/backgroundAmarillo.svg);" loading="lazy">
-      <div class="container">
-            <div class="col-sm-9 text-center mx-auto">
-                <h3>NUESTRA MOVIDA</h3>
-                <p>Laboratorio de Movidas es el resultado del trabajo en equipo de profesionales freelance que están especializadas en diferentes sectores. Hacemos cosas tan diferentes (diseño editorial y gráfico, contenido para redes o desarrollo web) que es una movida, pero de las buenas.</p>
-              </div> 
-            </div>
-            <!-- formulario para la web -->
-            <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-            <footer class="footer">
-              <div class="container new-footer">
-                <div class="row">
-                  <div class="col-lg-8 mx-auto text-center mb-2 mt-2">
-                    <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-                      <span class="text-lg fab fa-instagram"></span>
-                    </a>
-                    <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-                      <span class="text-lg fab fa-tiktok"></span>
-                    </a>
-                    <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-                      <span class="text-lg fab fa-linkedin"></span>
-                    </a>
-                    <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-                      <span class="text-lg fab fa-google-plus"></span>
-                    </a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-8 mx-auto text-center mt-1">
-                    <p class="mb-0 text-secondary">
-                      Todos los derechos reservados. Copyright © <script>document.write(new Date().getFullYear())</script> Laboratorio de Movidas.
-                    </p>
-                  </div>
-                </div>
+         <!-- START HEADER -->
+         <header class="header-2">
+            <div class="page-header min-vh-100" style="background-image: url(./assets/img/backgroundAmarillo.svg);" loading="lazy">
+              <div class="container">
+                    <div class="col-sm-9 text-center mx-auto">
+                        <h3>NUESTRAS MOVIDAS</h3>
+                        <p>Laboratorio de Movidas es el resultado del trabajo en equipo de profesionales freelance que están especializadas en diferentes sectores. Hacemos cosas tan diferentes (diseño editorial y gráfico, contenido para redes o desarrollo web) que es una movida, pero de las buenas.</p>
+                    </div>
+                    <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+                    <footer class="footer">
+                      <div class="container new-footer">
+                        <div class="row">
+                          <div class="col-lg-8 mx-auto text-center mb-2 mt-2">
+                            <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
+                              <span class="text-lg fab fa-instagram"></span>
+                            </a>
+                            <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
+                              <span class="text-lg fab fa-tiktok"></span>
+                            </a>
+                            <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
+                              <span class="text-lg fab fa-linkedin"></span>
+                            </a>
+                            <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
+                              <span class="text-lg fab fa-google-plus"></span>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-8 mx-auto text-center mt-1">
+                            <p class="mb-0 text-secondary">
+                              Todos los derechos reservados. Copyright © <script>document.write(new Date().getFullYear())</script> Laboratorio de Movidas.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </footer>
+                    <!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
               </div>
-            </footer>
-            <!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-      </div>
-    </div>
-  </header>
-   <!-- END HEADER -->
+            </div>
+          </header>
+           <!-- END HEADER -->
+        
+          <!--   Core JS Files   -->
+          <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+          <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+          <script src="./assets/js/plugins/perfect-scrollbar.min.js"></script>
+          <!--  Plugin for TypedJS, full documentation here: https://github.com/mattboldt/typed.js/ -->
+          <script src="./assets/js/plugins/typedjs.js"></script>
+          <!--  Plugin for TypedJS, full documentation here: https://github.com/inorganik/CountUp.js -->
+          <script src="./assets/js/plugins/countup.min.js"></script>
+          <!--  Plugin for Parallax, full documentation here: https://github.com/wagerfield/parallax  -->
+          <script src="./assets/js/plugins/parallax.min.js"></script>
+          <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+          <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+          <!--  Plugin for the blob animation -->
+          <script src="./assets/js/plugins/anime.min.js" type="text/javascript"></script>
+          <!-- Control Center for Material UI Kit: parallax effects, scripts for the example pages etc -->
+          <!--  Google Maps Plugin    -->
+          <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
+          <script src="./assets/js/material-kit-pro.min.js?v=3.0.3" type="text/javascript"></script>
+        
+          <script>
+            if (document.getElementsByClassName('page-header')) {
+              window.onscroll = debounce(function() {
+                var scrollPosition = window.pageYOffset;
+                var bgParallax = document.querySelector('.page-header');
+                var oVal = (window.scrollY / 3);
+                bgParallax.style.transform = 'translate3d(0,' + oVal + 'px,0)';
+              }, 6);
+            }
+          </script>
+        </body>
+        
+        </html>
+  
 
   <!--   Core JS Files   -->
   <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
