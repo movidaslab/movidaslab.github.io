@@ -68,7 +68,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./contact.html">
+                  <a style="color: #2B85C7;" class="nav-link" href="./contact.html">
                     Contacto
                   </a>
                 </li>
@@ -94,28 +94,68 @@
 
        <!-- START HEADER -->
   <header class="header-2">
-    <div class="page-header min-vh-100" style="background-image: url(./assets/img/backgroundRed.svg);" loading="lazy">
+    <div class="page-header min-vh-100" style="background-image: url(./assets/img/backgroundDarkBlue.svg);" loading="lazy">
       <div class="container">
             <div class="col-sm-9 text-center mx-auto">
-              <div id="count-stats" class="col-lg-8 text-center mx-auto my-auto logo-movidas">
-                <h1 class="logo-movidas"><span><img src="./assets/img/VectormovidasLogo.svg" style="width: 30%" alt="Logo MovidasLab"></span>ovidas<span id="typed"></span></h1>
-                <div id="typed-strings">
-                  <h1 class="logo-lab">.lab</h1>
-                </div>
-                <!-- <div class="row">
-                  <div class="col-lg-12 mx-auto text-center mb-2 mt-2">
-                    <a href="javascript:;" target="_blank" class="me-xl-3 me-3">
-                      <span class="text-lg">Nuestra Movida</span>
-                    </a>
-                    <a href="javascript:;" target="_blank" class="me-xl-3 me-3">
-                      <span class="text-lg">Movidas anteriores</span>
-                    </a>
-                    <a href="javascript:;" target="_blank" class="me-xl-3 me-3">
-                      <span class="text-lg">Cuentanos tu movida</span>
-                    </a>
-                  </div>
-                </div> -->
-              </div> 
+                <h3>CUÉNTANOS TU MOVIDA</h3>
+                <section class="py-5">
+                    <div class="container">
+                      <div class="row align-items-center">
+                        <div class="col-lg-8 mx-auto text-center">
+                          <div class="ms-3 mb-md-5">
+                            <p>
+                                A nosotras sí hay algo que nos gusta, es hablar de movidas. Si quieres que comentemos las necesidades de tu negocio, si te gustaría colaborar con nosotras o simplemente conocernos, aquí estamos.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-8 mx-auto">
+                          <div class="card card-plain">
+                            <form id="contact-form" method="post" autocomplete="off">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="input-group input-group-static mb-4">
+                                      <label>Nombre</label>
+                                      <input class="form-control" placeholder="eg. Michael" aria-label="Nombre..." type="text">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6 ps-2">
+                                    <div class="input-group input-group-static">
+                                      <label>Last Name</label>
+                                      <input type="text" class="form-control" placeholder="eg. Jordan" aria-label="Apellido...">
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="mb-4">
+                                  <div class="input-group input-group-static">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control" placeholder="eg. michael@creative-tim.com">
+                                  </div>
+                                </div>
+                                <div class="input-group input-group-static mb-4">
+                                  <label>Tu mensaje</label>
+                                  <textarea name="message" class="form-control" placeholder="Type here" id="message" rows="6"></textarea>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <div class="form-check form-switch d-flex align-items-center mb-4">
+                                      <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked="">
+                                      <label class="form-check-label mb-0 ms-3" for="flexSwitchCheckDefault">Entiendo los <a href="javascript:;" class="text-dark"><u>Terminos y condiciones</u></a>.</label>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-12">
+                                    <button type="submit" class="btn bg-gradient-info float-end">Enviar mensaje</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
             </div>
             <!-- formulario para la web -->
             <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
@@ -170,91 +210,7 @@
   <!--  Google Maps Plugin    -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDTTfWur0PDbZWPr7Pmq8K3jiDp0_xUziI"></script>
   <script src="./assets/js/material-kit-pro.min.js?v=3.0.3" type="text/javascript"></script>
-  <script>
-    // get the element to animate
-    var element = document.getElementById('count-stats');
-    var elementHeight = element.clientHeight;
 
-    // listen for scroll event and call animate function
-
-    document.addEventListener('scroll', animate);
-
-    // check if element is in view
-    function inView() {
-      // get window height
-      var windowHeight = window.innerHeight;
-      // get number of pixels that the document is scrolled
-      var scrollY = window.scrollY || window.pageYOffset;
-      // get current scroll position (distance from the top of the page to the bottom of the current viewport)
-      var scrollPosition = scrollY + windowHeight;
-      // get element position (distance from the top of the page to the bottom of the element)
-      var elementPosition = element.getBoundingClientRect().top + scrollY + elementHeight;
-
-      // is scroll position greater than element position? (is element in view?)
-      if (scrollPosition > elementPosition) {
-        return true;
-      }
-
-      return false;
-    }
-
-    var animateComplete = true;
-    // animate element when it is in view
-    function animate() {
-
-      // is element in view?
-      if (inView()) {
-        if (animateComplete) {
-          if (document.getElementById('state1')) {
-            const countUp = new CountUp('state1', document.getElementById("state1").getAttribute("countTo"));
-            if (!countUp.error) {
-              countUp.start();
-            } else {
-              console.error(countUp.error);
-            }
-          }
-          if (document.getElementById('state2')) {
-            const countUp1 = new CountUp('state2', document.getElementById("state2").getAttribute("countTo"));
-            if (!countUp1.error) {
-              countUp1.start();
-            } else {
-              console.error(countUp1.error);
-            }
-          }
-          if (document.getElementById('state3')) {
-            const countUp2 = new CountUp('state3', document.getElementById("state3").getAttribute("countTo"));
-            if (!countUp2.error) {
-              countUp2.start();
-            } else {
-              console.error(countUp2.error);
-            };
-          }
-          animateComplete = false;
-        }
-      }
-    }
-
-    if (document.getElementById('typed')) {
-      var typed = new Typed("#typed", {
-        stringsElement: '#typed-strings',
-        typeSpeed: 90,
-        backSpeed: 90,
-        backDelay: 200,
-        startDelay: 500,
-        loop: true
-      });
-    }
-  </script>
-  <script>
-    if (document.getElementsByClassName('page-header')) {
-      window.onscroll = debounce(function() {
-        var scrollPosition = window.pageYOffset;
-        var bgParallax = document.querySelector('.page-header');
-        var oVal = (window.scrollY / 3);
-        bgParallax.style.transform = 'translate3d(0,' + oVal + 'px,0)';
-      }, 6);
-    }
-  </script>
 </body>
 
 </html>
