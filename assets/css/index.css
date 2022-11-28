@@ -4,12 +4,17 @@ body{
     font-size: 58px;
     font-weight: 700;
 }
+.logo-movidas{
+    font-family: 'Neue Haas Grotesk Display Pro' !important;
+    color: rgb(0, 0, 0) !important;
+    font-weight: 300 !important;
+}
 
-h1{
-    color: black !important;
-    font-family: "IBM Plex Mono" !important;
-    font-size: 50px;
-    font-weight: 700;
+#typed{
+    font-family: 'Neue Haas Grotesk Display Pro' !important;
+    color: rgb(0, 0, 0) !important;
+    font-weight: 800 !important;
+    font-style: bold;
 }
 
 .navbar{
@@ -26,7 +31,7 @@ h1{
 }
 
 .text-secondary{
-    color: rgb(42, 41, 41);
+    color: rgb(0, 0, 0) !important;
 }
 
 .new-footer {
