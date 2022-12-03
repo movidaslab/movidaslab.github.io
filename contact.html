@@ -42,24 +42,26 @@
 <body>
 
   <!-- START NAVBAR -->
-  <div id="navbar" class="container position-sticky z-index-sticky top-0">
+  <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
-        <nav class="navbar navbar-expand-lg border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+        <nav class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
           <div class="container-fluid px-0">
             <a class="navbar-brand" href="./index.html" rel="tooltip">
-              <img src="./assets/img/movidas.lab.svg" style="width: 40%;">
+              <img src="./assets/img/movidas.lab.svg" style="width: 100%;">
             </a>
             <button class="navbar-toggler shadow-none ms-md-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon">
-                <span><img src="./assets/img/VectormovidasLogo.svg" style="width: 100%" alt="Logo MovidasLab"> </span>
+              <span class="navbar-toggler-icon mt-2">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
               </span>
             </button>
             <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
               <ul class="navbar-nav navbar-nav-hover ms-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="./services.html">
-                    Que hacemos
+                    Movidas
                   </a>
                 </li>
                 <li class="nav-item">
@@ -68,7 +70,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a style="color: #2B85C7;" class="nav-link" href="./contact.html">
+                  <a style="color: #2B85C7" class="nav-link" href="./contact.html">
                     Contacto
                   </a>
                 </li>
@@ -83,10 +85,10 @@
                   </a>
                 </li> -->
               </ul>
+              </ul>
             </div>
           </div>
         </nav>
-        <!-- End Navbar -->
       </div>
     </div>
   </div>
@@ -95,7 +97,7 @@
        <!-- START HEADER -->
   <header class="header-2">
     <div class="page-header min-vh-100" style="background-image: url(./assets/img/backgroundDarkBlue.svg);" loading="lazy">
-      <div class="container">
+        <div class="container">
             <div class="col-sm-9 text-center mx-auto">
                 <h3>CUÉNTANOS TU MOVIDA</h3>
                 <section class="py-5">
@@ -123,15 +125,15 @@
                                   </div>
                                   <div class="col-md-6 ps-2">
                                     <div class="input-group input-group-static">
-                                      <label>Last Name</label>
-                                      <input type="text" class="form-control" placeholder="eg. Jordan" aria-label="Apellido...">
+                                      <label>Apellidos</label>
+                                      <input type="text" class="form-control" placeholder="eg. Jordan" aria-label="Apellidos...">
                                     </div>
                                   </div>
                                 </div>
                                 <div class="mb-4">
                                   <div class="input-group input-group-static">
                                     <label>Email</label>
-                                    <input type="email" class="form-control" placeholder="eg. michael@creative-tim.com">
+                                    <input type="email" class="form-control" placeholder="eg. michael@jordan.com">
                                   </div>
                                 </div>
                                 <div class="input-group input-group-static mb-4">
@@ -140,10 +142,10 @@
                                 </div>
                                 <div class="row">
                                   <div class="col-md-6">
-                                    <div class="form-check form-switch d-flex align-items-center mb-4">
+                                    <!-- <div class="form-check form-switch d-flex align-items-center mb-4">
                                       <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" checked="">
                                       <label class="form-check-label mb-0 ms-3" for="flexSwitchCheckDefault">Entiendo los <a href="javascript:;" class="text-dark"><u>Terminos y condiciones</u></a>.</label>
-                                    </div>
+                                    </div> -->
                                   </div>
                                   <div class="col-md-12">
                                     <button type="submit" class="btn bg-gradient-info float-end">Enviar mensaje</button>
@@ -157,35 +159,36 @@
                     </div>
                   </section>
             </div>
+
             <!-- formulario para la web -->
             <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
             <footer class="footer">
-              <div class="container new-footer">
-                <div class="row">
-                  <div class="col-lg-8 mx-auto text-center mb-2 mt-2">
-                    <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-                      <span class="text-lg fab fa-instagram"></span>
-                    </a>
-                    <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-                      <span class="text-lg fab fa-tiktok"></span>
-                    </a>
-                    <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-                      <span class="text-lg fab fa-linkedin"></span>
-                    </a>
-                    <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-                      <span class="text-lg fab fa-google-plus"></span>
-                    </a>
+                <div class="container new-footer">
+                  <div class="row">
+                    <div class="col-lg-8 mx-auto text-center mb-2 mt-2">
+                      <a href="https://www.instagram.com/movidas.lab/" target="_blank" class="text-secondary me-xl-4 me-4">
+                        <span class="text-lg fab fa-instagram"></span>
+                      </a>
+                      <a href="https://www.tiktok.com/@movidas.lab" target="_blank" class="text-secondary me-xl-4 me-4">
+                        <span class="text-lg fab fa-tiktok"></span>
+                      </a>
+                      <a href="https://www.instagram.com/movidas.lab/" target="_blank" class="text-secondary me-xl-4 me-4">
+                        <span class="text-lg fab fa-linkedin"></span>
+                      </a>
+                      <a href="https://twitter.com/Movidaslab" target="_blank" class="text-secondary me-xl-4 me-4">
+                        <span class="text-lg fab fa-twitter"></span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-8 mx-auto text-center mt-1">
+                      <p class="mb-0 text-secondary">
+                        Todos los derechos reservados. Copyright © <script>document.write(new Date().getFullYear())</script> Laboratorio de Movidas.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-8 mx-auto text-center mt-1">
-                    <p class="mb-0 text-secondary">
-                      Todos los derechos reservados. Copyright © <script>document.write(new Date().getFullYear())</script> Laboratorio de Movidas.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </footer>
+              </footer>
             <!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
       </div>
     </div>

@@ -42,24 +42,26 @@
 <body>
 
   <!-- START NAVBAR -->
-  <div id="navbar" class="container position-sticky z-index-sticky top-0">
+  <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
       <div class="col-12">
-        <nav class="navbar navbar-expand-lg border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+        <nav class="navbar navbar-expand-lg  blur border-radius-xl top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
           <div class="container-fluid px-0">
             <a class="navbar-brand" href="./index.html" rel="tooltip">
-              <img src="./assets/img/movidas.lab.svg" style="width: 40%;">
+              <img src="./assets/img/movidas.lab.svg" style="width: 100%;">
             </a>
             <button class="navbar-toggler shadow-none ms-md-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon">
-                <span><img src="./assets/img/VectormovidasLogo.svg" style="width: 100%" alt="Logo MovidasLab"> </span>
+              <span class="navbar-toggler-icon mt-2">
+                <span class="navbar-toggler-bar bar1"></span>
+                <span class="navbar-toggler-bar bar2"></span>
+                <span class="navbar-toggler-bar bar3"></span>
               </span>
             </button>
             <div class="collapse navbar-collapse w-100 pt-3 pb-2 py-lg-0" id="navigation">
               <ul class="navbar-nav navbar-nav-hover ms-auto">
                 <li class="nav-item">
                   <a class="nav-link" href="./services.html">
-                    Que hacemos
+                    Movidas
                   </a>
                 </li>
                 <li class="nav-item">
@@ -73,7 +75,7 @@
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a style="color: #EF6B11;" class="nav-link" href="./tienda.html">
+                  <a style="color: #EF6B11" class="nav-link" href="./tienda.html">
                     Tienda
                   </a>
                 </li>
@@ -83,10 +85,10 @@
                   </a>
                 </li> -->
               </ul>
+              </ul>
             </div>
           </div>
         </nav>
-        <!-- End Navbar -->
       </div>
     </div>
   </div>
@@ -96,345 +98,342 @@
   <header class="header-2">
     <div class="page-header min-vh-100" style="background-image: url(./assets/img/backgroundRed.svg);" loading="lazy">
       <div class="container">
-            <div class="col-sm-9 text-center mx-auto">
-              <div id='product-component-1669666758116'></div>
-              <script type="text/javascript">
-              /*<![CDATA[*/
-              (function () {
-                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
-                if (window.ShopifyBuy) {
-                  if (window.ShopifyBuy.UI) {
-                    ShopifyBuyInit();
-                  } else {
-                    loadScript();
-                  }
-                } else {
-                  loadScript();
-                }
-                function loadScript() {
-                  var script = document.createElement('script');
-                  script.async = true;
-                  script.src = scriptURL;
-                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
-                  script.onload = ShopifyBuyInit;
-                }
-                function ShopifyBuyInit() {
-                  var client = ShopifyBuy.buildClient({
-                    domain: 'movidaslab.myshopify.com',
-                    storefrontAccessToken: '70738099012973df656956422e28a883',
-                  });
-                  ShopifyBuy.UI.onReady(client).then(function (ui) {
-                    ui.createComponent('product', {
-                      id: '8030861984009',
-                      node: document.getElementById('product-component-1669666758116'),
-                      moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
-                      options: {
-                "product": {
-                  "styles": {
-                    "product": {
-                      "@media (min-width: 601px)": {
-                        "max-width": "100%",
-                        "margin-left": "0",
-                        "margin-bottom": "50px"
-                      },
-                      "text-align": "left"
-                    },
-                    "title": {
-                      "font-family": "Roboto, sans-serif",
-                      "font-size": "26px",
-                      "color": "#ef6b11"
-                    },
-                    "button": {
-                      "font-family": "Roboto, sans-serif",
-                      ":hover": {
-                        "background-color": "#d7600f"
-                      },
-                      "background-color": "#ef6b11",
-                      ":focus": {
-                        "background-color": "#d7600f"
-                      },
-                      "border-radius": "4px",
-                      "padding-left": "38px",
-                      "padding-right": "38px"
-                    },
-                    "price": {
-                      "font-family": "Roboto, sans-serif",
-                      "font-size": "18px",
-                      "color": "#000000"
-                    },
-                    "compareAt": {
-                      "font-family": "Roboto, sans-serif",
-                      "font-size": "15.299999999999999px",
-                      "color": "#000000"
-                    },
-                    "unitPrice": {
-                      "font-family": "Roboto, sans-serif",
-                      "font-size": "15.299999999999999px",
-                      "color": "#000000"
-                    },
-                    "description": {
-                      "font-family": "Roboto, sans-serif",
-                      "color": "#000000"
-                    }
-                  },
-                  "layout": "horizontal",
-                  "contents": {
-                    "img": false,
-                    "imgWithCarousel": true,
-                    "button": false,
-                    "buttonWithQuantity": true,
-                    "description": true
-                  },
-                  "width": "100%",
-                  "text": {
-                    "button": "Rerservame ya"
-                  },
-                  "googleFonts": [
-                    "Roboto"
-                  ]
-                },
-                "productSet": {
-                  "styles": {
-                    "products": {
-                      "@media (min-width: 601px)": {
-                        "margin-left": "-20px"
-                      }
-                    }
-                  }
-                },
-                "modalProduct": {
-                  "contents": {
-                    "img": false,
-                    "imgWithCarousel": true,
-                    "button": false,
-                    "buttonWithQuantity": true
-                  },
-                  "styles": {
-                    "product": {
-                      "@media (min-width: 601px)": {
-                        "max-width": "100%",
-                        "margin-left": "0px",
-                        "margin-bottom": "0px"
-                      }
-                    },
-                    "button": {
-                      "font-family": "Roboto, sans-serif",
-                      ":hover": {
-                        "background-color": "#d7600f"
-                      },
-                      "background-color": "#ef6b11",
-                      ":focus": {
-                        "background-color": "#d7600f"
-                      },
-                      "border-radius": "4px",
-                      "padding-left": "38px",
-                      "padding-right": "38px"
-                    },
-                    "title": {
-                      "font-family": "Helvetica Neue, sans-serif",
-                      "font-weight": "bold",
-                      "font-size": "26px",
-                      "color": "#4c4c4c"
-                    },
-                    "price": {
-                      "font-family": "Helvetica Neue, sans-serif",
-                      "font-weight": "normal",
-                      "font-size": "18px",
-                      "color": "#4c4c4c"
-                    },
-                    "compareAt": {
-                      "font-family": "Helvetica Neue, sans-serif",
-                      "font-weight": "normal",
-                      "font-size": "15.299999999999999px",
-                      "color": "#4c4c4c"
-                    },
-                    "unitPrice": {
-                      "font-family": "Helvetica Neue, sans-serif",
-                      "font-weight": "normal",
-                      "font-size": "15.299999999999999px",
-                      "color": "#4c4c4c"
-                    },
-                    "description": {
-                      "font-family": "Helvetica Neue, sans-serif",
-                      "font-weight": "normal",
-                      "font-size": "14px",
-                      "color": "#4c4c4c"
-                    }
-                  },
-                  "googleFonts": [
-                    "Roboto"
-                  ],
-                  "text": {
-                    "button": "Add to cart"
-                  }
-                },
-                "option": {},
-                "cart": {
-                  "styles": {
-                    "button": {
-                      "font-family": "Roboto, sans-serif",
-                      ":hover": {
-                        "background-color": "#d7600f"
-                      },
-                      "background-color": "#ef6b11",
-                      ":focus": {
-                        "background-color": "#d7600f"
-                      },
-                      "border-radius": "4px"
-                    },
-                    "title": {
-                      "color": "#000000"
-                    },
-                    "header": {
-                      "color": "#000000"
-                    },
-                    "lineItems": {
-                      "color": "#000000"
-                    },
-                    "subtotalText": {
-                      "color": "#000000"
-                    },
-                    "subtotal": {
-                      "color": "#000000"
-                    },
-                    "notice": {
-                      "color": "#000000"
-                    },
-                    "currency": {
-                      "color": "#000000"
-                    },
-                    "close": {
-                      "color": "#000000",
-                      ":hover": {
-                        "color": "#000000"
-                      }
-                    },
-                    "empty": {
-                      "color": "#000000"
-                    },
-                    "noteDescription": {
-                      "color": "#000000"
-                    },
-                    "discountText": {
-                      "color": "#000000"
-                    },
-                    "discountIcon": {
-                      "fill": "#000000"
-                    },
-                    "discountAmount": {
-                      "color": "#000000"
-                    }
-                  },
-                  "text": {
-                    "title": "Carrito",
-                    "total": "Total",
-                    "empty": "Tu carrito esta vacío",
-                    "notice": "Recuerda que puedes para obtener este calendario bblablaalasfefjegfi",
-                    "button": "RESERVAME UNO"
-                  },
-                  "popup": false,
-                  "googleFonts": [
-                    "Roboto"
-                  ]
-                },
-                "toggle": {
-                  "styles": {
-                    "toggle": {
-                      "font-family": "Roboto, sans-serif",
-                      "background-color": "#ef6b11",
-                      ":hover": {
-                        "background-color": "#d7600f"
-                      },
-                      ":focus": {
-                        "background-color": "#d7600f"
-                      }
-                    }
-                  },
-                  "googleFonts": [
-                    "Roboto"
-                  ]
-                },
-                "lineItem": {
-                  "styles": {
-                    "variantTitle": {
-                      "color": "#000000"
-                    },
-                    "title": {
-                      "color": "#000000"
-                    },
-                    "price": {
-                      "color": "#000000"
-                    },
-                    "fullPrice": {
-                      "color": "#000000"
-                    },
-                    "discount": {
-                      "color": "#000000"
-                    },
-                    "discountIcon": {
-                      "fill": "#000000"
-                    },
-                    "quantity": {
-                      "color": "#000000"
-                    },
-                    "quantityIncrement": {
-                      "color": "#000000",
-                      "border-color": "#000000"
-                    },
-                    "quantityDecrement": {
-                      "color": "#000000",
-                      "border-color": "#000000"
-                    },
-                    "quantityInput": {
-                      "color": "#000000",
-                      "border-color": "#000000"
-                    }
-                  }
-                }
-              },
-                    });
-                  });
-                }
-              })();
-              /*]]>*/
-              </script>     
-
-            </div> 
+        <div id='product-component-1670102894399'></div>
+<script type="text/javascript">
+/*<![CDATA[*/
+(function () {
+  var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+  if (window.ShopifyBuy) {
+    if (window.ShopifyBuy.UI) {
+      ShopifyBuyInit();
+    } else {
+      loadScript();
+    }
+  } else {
+    loadScript();
+  }
+  function loadScript() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = scriptURL;
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+    script.onload = ShopifyBuyInit;
+  }
+  function ShopifyBuyInit() {
+    var client = ShopifyBuy.buildClient({
+      domain: 'movidaslab.myshopify.com',
+      storefrontAccessToken: '70738099012973df656956422e28a883',
+    });
+    ShopifyBuy.UI.onReady(client).then(function (ui) {
+      ui.createComponent('product', {
+        id: '8030861984009',
+        node: document.getElementById('product-component-1670102894399'),
+        moneyFormat: '%E2%82%AC%7B%7Bamount_with_comma_separator%7D%7D',
+        options: {
+  "product": {
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0",
+          "margin-bottom": "50px"
+        },
+        "text-align": "left"
+      },
+      "title": {
+        "font-family": "Roboto, sans-serif",
+        "font-size": "26px",
+        "color": "#ef6b11"
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#d7600f"
+        },
+        "background-color": "#ef6b11",
+        ":focus": {
+          "background-color": "#d7600f"
+        },
+        "border-radius": "4px",
+        "padding-left": "38px",
+        "padding-right": "38px"
+      },
+      "price": {
+        "font-family": "Roboto, sans-serif",
+        "font-size": "18px",
+        "color": "#000000"
+      },
+      "compareAt": {
+        "font-family": "Roboto, sans-serif",
+        "font-size": "15.299999999999999px",
+        "color": "#000000"
+      },
+      "unitPrice": {
+        "font-family": "Roboto, sans-serif",
+        "font-size": "15.299999999999999px",
+        "color": "#000000"
+      },
+      "description": {
+        "font-family": "Roboto, sans-serif",
+        "color": "#000000"
+      }
+    },
+    "layout": "horizontal",
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true,
+      "description": true
+    },
+    "width": "100%",
+    "text": {
+      "button": "Rerservame ya"
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "productSet": {
+    "styles": {
+      "products": {
+        "@media (min-width: 601px)": {
+          "margin-left": "-20px"
+        }
+      }
+    }
+  },
+  "modalProduct": {
+    "contents": {
+      "img": false,
+      "imgWithCarousel": true,
+      "button": false,
+      "buttonWithQuantity": true
+    },
+    "styles": {
+      "product": {
+        "@media (min-width: 601px)": {
+          "max-width": "100%",
+          "margin-left": "0px",
+          "margin-bottom": "0px"
+        }
+      },
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#d7600f"
+        },
+        "background-color": "#ef6b11",
+        ":focus": {
+          "background-color": "#d7600f"
+        },
+        "border-radius": "4px",
+        "padding-left": "38px",
+        "padding-right": "38px"
+      },
+      "title": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "bold",
+        "font-size": "26px",
+        "color": "#4c4c4c"
+      },
+      "price": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "18px",
+        "color": "#4c4c4c"
+      },
+      "compareAt": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#4c4c4c"
+      },
+      "unitPrice": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "15.299999999999999px",
+        "color": "#4c4c4c"
+      },
+      "description": {
+        "font-family": "Helvetica Neue, sans-serif",
+        "font-weight": "normal",
+        "font-size": "14px",
+        "color": "#4c4c4c"
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ],
+    "text": {
+      "button": "Add to cart"
+    }
+  },
+  "option": {},
+  "cart": {
+    "styles": {
+      "button": {
+        "font-family": "Roboto, sans-serif",
+        ":hover": {
+          "background-color": "#d7600f"
+        },
+        "background-color": "#ef6b11",
+        ":focus": {
+          "background-color": "#d7600f"
+        },
+        "border-radius": "4px"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "header": {
+        "color": "#000000"
+      },
+      "lineItems": {
+        "color": "#000000"
+      },
+      "subtotalText": {
+        "color": "#000000"
+      },
+      "subtotal": {
+        "color": "#000000"
+      },
+      "notice": {
+        "color": "#000000"
+      },
+      "currency": {
+        "color": "#000000"
+      },
+      "close": {
+        "color": "#000000",
+        ":hover": {
+          "color": "#000000"
+        }
+      },
+      "empty": {
+        "color": "#000000"
+      },
+      "noteDescription": {
+        "color": "#000000"
+      },
+      "discountText": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "discountAmount": {
+        "color": "#000000"
+      }
+    },
+    "text": {
+      "title": "Carrito",
+      "total": "Total",
+      "empty": "Tu carrito esta vacío",
+      "notice": "Recuerda que puedes para obtener este calendario bblablaalasfefjegfi",
+      "button": "RESERVAME UNO"
+    },
+    "popup": false,
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "toggle": {
+    "styles": {
+      "toggle": {
+        "font-family": "Roboto, sans-serif",
+        "background-color": "#ef6b11",
+        ":hover": {
+          "background-color": "#d7600f"
+        },
+        ":focus": {
+          "background-color": "#d7600f"
+        }
+      }
+    },
+    "googleFonts": [
+      "Roboto"
+    ]
+  },
+  "lineItem": {
+    "styles": {
+      "variantTitle": {
+        "color": "#000000"
+      },
+      "title": {
+        "color": "#000000"
+      },
+      "price": {
+        "color": "#000000"
+      },
+      "fullPrice": {
+        "color": "#000000"
+      },
+      "discount": {
+        "color": "#000000"
+      },
+      "discountIcon": {
+        "fill": "#000000"
+      },
+      "quantity": {
+        "color": "#000000"
+      },
+      "quantityIncrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityDecrement": {
+        "color": "#000000",
+        "border-color": "#000000"
+      },
+      "quantityInput": {
+        "color": "#000000",
+        "border-color": "#000000"
+      }
+    }
+  }
+},
+      });
+    });
+  }
+})();
+/*]]>*/
+</script> 
       </div>
-            <!-- formulario para la web -->
-            <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-            <footer class="footer">
-              <div class="container new-footer">
-                <div class="row">
-                  <div class="col-lg-8 mx-auto text-center mb-2 mt-2">
-                    <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-                      <span class="text-lg fab fa-instagram"></span>
-                    </a>
-                    <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-                      <span class="text-lg fab fa-tiktok"></span>
-                    </a>
-                    <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-                      <span class="text-lg fab fa-linkedin"></span>
-                    </a>
-                    <a href="javascript:;" target="_blank" class="text-secondary me-xl-4 me-4">
-                      <span class="text-lg fab fa-google-plus"></span>
-                    </a>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-8 mx-auto text-center mt-1">
-                    <p class="mb-0 text-secondary">
-                      Todos los derechos reservados. Copyright © <script>document.write(new Date().getFullYear())</script> Laboratorio de Movidas.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </footer>
-            <!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
-      </div>
+           
+    </div>
     </div>
   </header>
    <!-- END HEADER -->
+  <!-- -------- START FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
+  <footer class="footer">
+    <div class="container new-footer">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center mb-2 mt-2">
+          <a href="https://www.instagram.com/movidas.lab/" target="_blank" class="text-secondary me-xl-4 me-4">
+            <span class="text-lg fab fa-instagram"></span>
+          </a>
+          <a href="https://www.tiktok.com/@movidas.lab" target="_blank" class="text-secondary me-xl-4 me-4">
+            <span class="text-lg fab fa-tiktok"></span>
+          </a>
+          <a href="https://www.instagram.com/movidas.lab/" target="_blank" class="text-secondary me-xl-4 me-4">
+            <span class="text-lg fab fa-linkedin"></span>
+          </a>
+          <a href="https://twitter.com/Movidaslab" target="_blank" class="text-secondary me-xl-4 me-4">
+            <span class="text-lg fab fa-twitter"></span>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8 mx-auto text-center mt-1">
+          <p class="mb-0 text-secondary">
+            Todos los derechos reservados. Copyright © <script>document.write(new Date().getFullYear())</script> Laboratorio de Movidas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+<!-- -------- END FOOTER 3 w/ COMPANY DESCRIPTION WITH LINKS & SOCIAL ICONS & COPYRIGHT ------- -->
 
   <!--   Core JS Files   -->
   <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
