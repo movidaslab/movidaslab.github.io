@@ -55,11 +55,24 @@ body{
     margin-top: 10px;;
 }
 
+.min-100{
+    min-height: 100vh !important; 
+    margin-top: 150px;
+}
+
+.big-min-100{
+    min-height: 120vh !important;
+    margin-top: 100px;
+}
+
 @media screen and (max-width: 426px){
-    .new-footer {
-        bottom: 0;
-        width: 100%;
-        margin-bottom: 20px;
-        padding-left: 0px !important;
+    .min-100 {
+        min-height: 87vh !important;
+    }
+
+
+    .big-min-100 {
+        min-height: 100vh !important;
+        margin-top: 150px;
     }
 }
